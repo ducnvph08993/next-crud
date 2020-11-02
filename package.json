@@ -1,14 +1,11 @@
 {
-  "homepage": "http://ducnvph08993.github.io/task-5",
   "name": "next-crud",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next build && next export"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
