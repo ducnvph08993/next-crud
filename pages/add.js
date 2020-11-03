@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addStudent } from "../redux/actions";
 import apiRequest from './api/productApi';
 import { useRouter } from "next/router";
+import "../styles/antd.less";
 
 const { Title } = Typography
 
