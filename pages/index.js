@@ -56,16 +56,12 @@ const Home = ({ student }) => {
       key: 'action',
       render: (text, record) => (
         <Space size="middle" >
-          <Link href=''>
-            <Button type="primary" onClick={() => onEdit(record.id)} style={{ backgroundColor: 'deeppink' }}>
-              Edit
-            </Button>
-          </Link>
-          <a>
-            <Button type="primary" danger onClick={() => { if (window.confirm('Delete the item?')) { onDelete(record.id) }; }}>
-              Delete
-            </Button>
-          </a>
+          <Button type="primary" onClick={() => onEdit(record.id)} style={{ backgroundColor: 'deeppink' }}>
+            Edit
+          </Button>
+          <Button type="primary" danger onClick={() => { if (window.confirm('Delete the item?')) { onDelete(record.id) }; }}>
+            Delete
+          </Button>
         </Space >
       ),
     },
