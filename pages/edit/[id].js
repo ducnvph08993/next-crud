@@ -42,10 +42,11 @@ const EditStudent = ({ student }) => {
 
             dispatch(action);
 
-            router.push("/");
+
         } catch (error) {
             console.log('You have an error', error)
         }
+        router.push("/");
     }
     return (
         <div className="add-form">
